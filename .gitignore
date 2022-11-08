@@ -50,9 +50,9 @@ Thumbs.db
 
 /bin/
 
-/.classpath
+\.classpath
 
-/.project
+\.project
 
-/.settings/
+\.settings/
 
