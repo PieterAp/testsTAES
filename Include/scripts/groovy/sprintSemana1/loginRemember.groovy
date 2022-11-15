@@ -43,28 +43,34 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class NoEmail {
-	@Given("I have the device ready")
-	public void i_have_the_device_ready() {
+
+class loginRemember {
+	
+	@When("I start the application for the first time")
+	public void i_start_the_application_for_the_first_time() {
+		Mobile.startApplication('C:\\Users\\M0hamede\\Desktop\\app-debug.apk', false)
+	}
+	
+	@When("I click on the {string} checkbox")
+	public void i_click_on_the_checkbox(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	   Mobile.tap(findTestObject('Object Repository/android.widget.CheckBox - Remember me (1)'), 0)
 	}
 
-	@When("I start the application")
-	public void i_start_the_application() {
-		Mobile.startApplication('C:\\Users\\M0hamede\\Desktop\\app-debug.apk', true)
+	@When("I close the application")
+	public void i_close_the_application() {
+	    // Write code here that turns the phrase above into concrete actions
+	    Mobile.closeApplication()
+	}
+	
+	@When("I start the application login remember")
+	public void i_start_the_application_login_remember() {
+		Mobile.startExistingApplication('com.example.fastuga', FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("I insert {string} in the password field")
-	public void i_insert_in_the_password_field(String string) {
-		Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Password (1)'), string, 0)
-	}
-
-	@When("I click on the Login button")
-	public void i_click_on_the_Login_button() {
-		Mobile.tap(findTestObject('Object Repository/android.widget.Button - LOGIN (2)'), 0)
-	}
-
-	@Then("I should see an error message stating that the email is required")
-	public void i_should_see_an_error_message_stating_that_the_email_is_required() {
-		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Email is required'), 0)
+	@Then("I should see the dashboard interface")
+	public void i_should_see_the_dashboard_interface() {
+	    // Write code here that turns the phrase above into concrete actions
+	    Mobile.getText(findTestObject('Object Repository/android.widget.TextView - DashBoard (1)'), 0)
 	}
 }

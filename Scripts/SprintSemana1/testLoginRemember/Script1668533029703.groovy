@@ -17,13 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\M0hamede\\Desktop\\app-debug.apk', true)
+Mobile.startApplication('C:\\Users\\M0hamede\\Desktop\\app-debug.apk', false)
 
-Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Email (1)'), 'maria@mail.pt', 0)
+Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Email (3)'), 'manager_1@mail.pt', 0)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - LOGIN (2)'), 0)
+Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Password (3)'), '123', 0)
 
-Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Password is required (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/android.widget.CheckBox - Remember me (1)'), 0)
+
+Mobile.tap(findTestObject('Object Repository/android.widget.Button - LOGIN (5)'), 0)
+
+Mobile.getText(findTestObject('Object Repository/android.widget.TextView - DashBoard (1)'), 0)
+
+Mobile.closeApplication()
+
+Mobile.startExistingApplication('com.example.fastuga', FailureHandling.STOP_ON_FAILURE)
+
+Mobile.getText(findTestObject('Object Repository/android.widget.TextView - DashBoard (1)'), 0)
 
 Mobile.closeApplication()
 

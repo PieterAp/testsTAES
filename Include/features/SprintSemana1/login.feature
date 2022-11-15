@@ -8,20 +8,20 @@ Feature: Login
 Scenario: Login with correct email and password
 	Given I have the device ready
 	When I start the application	
-	And I insert "manager_1@gmail.com" in the email field
+	And I insert "manager_1@mail.pt" in the email field
 	And I insert "123" in the password field 
 	And I click on the Login button
 	Then I should see a confirmation message and be presented with the dashboard
 	
 Scenario: Login with selected remember 
 	Given I have the device ready
-	When I start the application	
-	And I insert "manager_1@gmail.com" in the email field
+	When I start the application for the first time	
+	And I insert "manager_1@mail.pt" in the email field
 	And I insert "123" in the password field 
 	And I click on the "Remember me" checkbox
 	And I click on the Login button
 	And I close the application
-	And I start the application
+	And I start the application login remember
 	Then I should see the dashboard interface
 
 	
@@ -76,12 +76,12 @@ Scenario: Insert no password
 	And I click on the Login button
 	Then I should see an error message stating that the password is required
 
-Scenario: Login with no internet connection
-	Given I have the device ready
-	And I haven't got internet connection
-	When I start the application	
-	And I insert "pedro@gmail.com" in the email field
-	And I insert "pedroxpto" in the password field 
-	And I click on the Login button
-	Then I should see an error message stating that the login has failed
+#Scenario: Login with no internet connection
+	#Given I have the device ready
+	#When I start the application	
+	#And I haven't got internet connection
+	#And I insert "pedro@gmail.com" in the email field
+	#And I insert "pedroxpto" in the password field 
+	#And I click on the Login button
+	#Then I should see an error message stating that the login has failed
 	

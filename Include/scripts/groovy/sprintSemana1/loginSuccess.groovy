@@ -43,28 +43,11 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class NoEmail {
-	@Given("I have the device ready")
-	public void i_have_the_device_ready() {
-	}
 
-	@When("I start the application")
-	public void i_start_the_application() {
-		Mobile.startApplication('C:\\Users\\M0hamede\\Desktop\\app-debug.apk', true)
-	}
-
-	@When("I insert {string} in the password field")
-	public void i_insert_in_the_password_field(String string) {
-		Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Password (1)'), string, 0)
-	}
-
-	@When("I click on the Login button")
-	public void i_click_on_the_Login_button() {
-		Mobile.tap(findTestObject('Object Repository/android.widget.Button - LOGIN (2)'), 0)
-	}
-
-	@Then("I should see an error message stating that the email is required")
-	public void i_should_see_an_error_message_stating_that_the_email_is_required() {
-		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Email is required'), 0)
-	}
+class loginSuccess {
+	@Then("I should see a confirmation message and be presented with the dashboard")
+public void i_should_see_a_confirmation_message_and_be_presented_with_the_dashboard() {
+    // Write code here that turns the phrase above into concrete actions
+    Mobile.getText(findTestObject('Object Repository/android.widget.TextView - DashBoard'), 0)
+}
 }

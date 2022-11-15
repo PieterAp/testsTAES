@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\Pieter\\Desktop\\app-debug.apk', true)
+Mobile.startApplication('C:\\Users\\M0hamede\\Desktop\\app-debug.apk', true)
 
 Mobile.tap(findTestObject('Object Repository/android.widget.Button - LOGIN'), 0)
 
