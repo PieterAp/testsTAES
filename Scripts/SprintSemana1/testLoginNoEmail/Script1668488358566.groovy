@@ -17,13 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\igors\\Desktop\\app-debug.apk', true)
+Mobile.startApplication('C:\\Users\\Pieter\\Desktop\\app-debug.apk', true)
 
-Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Email (1)'), 'maria@mail.pt', 0)
+Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Password (1)'), '123', 0)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - LOGIN (2)'), 0)
+Mobile.tap(findTestObject('Object Repository/android.widget.Button - LOGIN (3)'), 0)
 
-Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Password is required (1)'), 0)
+Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Email is required (1)'), 0)
 
 Mobile.closeApplication()
 

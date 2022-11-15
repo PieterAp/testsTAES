@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TestLogin" time="157.161" tests="4" failures="0" errors="0">
+   <testsuite name="TestLogin" tests="4" failures="0" errors="0" time="157.161" skipped="0" timestamp="2022-11-15 00:05:59" hostname="Pieter - DESKTOP-QT3O8CC" id="Test Suites/TestLogin">
+      <properties>
+         <property name="deviceName" value="samsung SM-A515F (Android 11)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\dev\\taes\\Projeto\\teststaes.git\\Reports\\20221115_000545\\TestLogin\\20221115_000545"/>
+         <property name="logFiles" value="C:\\dev\\taes\\Projeto\\teststaes.git\\Reports\\20221115_000545\\TestLogin\\20221115_000545\\appium.log, C:\\dev\\taes\\Projeto\\teststaes.git\\Reports\\20221115_000545\\TestLogin\\20221115_000545\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Pieter - DESKTOP-QT3O8CC"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="appiumServerStatus" value="{&quot;value&quot;:{&quot;build&quot;:{&quot;version&quot;:&quot;1.22.3&quot;}},&quot;sessionId&quot;:null,&quot;status&quot;:0}"/>
+         <property name="katalonVersion" value="8.5.0.208"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.22.3"/>
+         <property name="deviceModel" value="SM-A515F"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="deviceManufacturer" value="samsung"/>
+         <property name="deviceId" value="R58N201Z65J"/>
+         <property name="deviceName" value="samsung SM-A515F (Android 11)"/>
+         <property name="deviceOSVersion" value="11"/>
+      </properties>
+      <testcase name="Test Cases/testLoginEmailInvalid" time="62.901" classname="Test Cases/testLoginEmailInvalid" status="PASSED">
+         <system-out><![CDATA[2022-11-15 00:05:59 - [TEST_CASE][PASSED] - Test Cases/testLoginEmailInvalid: Test Cases/testLoginEmailInvalid
+
+2022-11-15 00:06:00 - [TEST_STEP][PASSED] - startApplication("C:\Users\Pieter\Desktop\app-debug.apk", true): Started app at: 'C:\Users\Pieter\Desktop\app-debug.apk'
+
+2022-11-15 00:06:01 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+2022-11-15 00:06:11 - [MESSAGE][INFO] - Appium server started on port 60,176
+
+2022-11-15 00:06:49 - [MESSAGE][PASSED] - Started app at: 'C:\Users\Pieter\Desktop\app-debug.apk'
+
+2022-11-15 00:06:49 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/android.widget.EditText - Email"), "maria", 0): Text 'maria' has been set to element 'Object Repository/android.widget.EditText - Email'
+
+2022-11-15 00:06:49 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-11-15 00:06:52 - [MESSAGE][PASSED] - Text 'maria' has been set to element 'Object Repository/android.widget.EditText - Email'
+
+2022-11-15 00:06:52 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/android.widget.EditText - Password"), "123", 0): Text '123' has been set to element 'Object Repository/android.widget.EditText - Password'
+
+2022-11-15 00:06:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-11-15 00:06:55 - [MESSAGE][PASSED] - Text '123' has been set to element 'Object Repository/android.widget.EditText - Password'
+
+2022-11-15 00:06:55 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/android.widget.CheckBox - Remember me"), 0): Tapped on element 'Object Repository/android.widget.CheckBox - Remember me'
+
+2022-11-15 00:06:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-11-15 00:06:56 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/android.widget.CheckBox - Remember me'
+
+2022-11-15 00:06:56 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/android.widget.Button - LOGIN (1)"), 0): Tapped on element 'Object Repository/android.widget.Button - LOGIN (1)'
+
+2022-11-15 00:06:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-11-15 00:06:57 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/android.widget.Button - LOGIN (1)'
+
+2022-11-15 00:06:57 - [TEST_STEP][PASSED] - getText(findTestObject("Object Repository/android.widget.TextView - Email is not valid"), 0): Text of element 'Object Repository/android.widget.TextView - Email is not valid' is: 'Email is not valid'
+
+2022-11-15 00:06:57 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-11-15 00:06:58 - [MESSAGE][PASSED] - Text of element 'Object Repository/android.widget.TextView - Email is not valid' is: 'Email is not valid'
+
+2022-11-15 00:06:58 - [TEST_STEP][PASSED] - closeApplication(): Close app successfully
+
+2022-11-15 00:07:02 - [MESSAGE][PASSED] - Close app successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/testLoginNoData" time="29.964" classname="Test Cases/testLoginNoData" status="PASSED">
+         <system-out><![CDATA[2022-11-15 00:07:02 - [TEST_CASE][PASSED] - Test Cases/testLoginNoData: Test Cases/testLoginNoData
+
+2022-11-15 00:07:03 - [TEST_STEP][PASSED] - startApplication("C:\Users\Pieter\Desktop\app-debug.apk", true): Started app at: 'C:\Users\Pieter\Desktop\app-debug.apk'
+
+2022-11-15 00:07:04 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+2022-11-15 00:07:06 - [MESSAGE][INFO] - Appium server started on port 60,423
+
+2022-11-15 00:07:26 - [MESSAGE][PASSED] - Started app at: 'C:\Users\Pieter\Desktop\app-debug.apk'
+
+2022-11-15 00:07:26 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/android.widget.Button - LOGIN"), 0): Tapped on element 'Object Repository/android.widget.Button - LOGIN'
+
+2022-11-15 00:07:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-11-15 00:07:28 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/android.widget.Button - LOGIN'
+
+2022-11-15 00:07:28 - [TEST_STEP][PASSED] - getText(findTestObject("Object Repository/android.widget.TextView - Email is required"), 0): Text of element 'Object Repository/android.widget.TextView - Email is required' is: 'Email is required'
+
+2022-11-15 00:07:28 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-11-15 00:07:29 - [MESSAGE][PASSED] - Text of element 'Object Repository/android.widget.TextView - Email is required' is: 'Email is required'
+
+2022-11-15 00:07:29 - [TEST_STEP][PASSED] - getText(findTestObject("Object Repository/android.widget.TextView - Password is required"), 0): Text of element 'Object Repository/android.widget.TextView - Password is required' is: 'Password is required'
+
+2022-11-15 00:07:29 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-11-15 00:07:29 - [MESSAGE][PASSED] - Text of element 'Object Repository/android.widget.TextView - Password is required' is: 'Password is required'
+
+2022-11-15 00:07:29 - [TEST_STEP][PASSED] - closeApplication(): Close app successfully
+
+2022-11-15 00:07:32 - [MESSAGE][PASSED] - Close app successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/testLoginNoPassword" time="26.464" classname="Test Cases/testLoginNoPassword" status="PASSED">
+         <system-out><![CDATA[2022-11-15 00:07:32 - [TEST_CASE][PASSED] - Test Cases/testLoginNoPassword: Test Cases/testLoginNoPassword
+
+2022-11-15 00:07:33 - [TEST_STEP][PASSED] - startApplication("C:\Users\Pieter\Desktop\app-debug.apk", true): Started app at: 'C:\Users\Pieter\Desktop\app-debug.apk'
+
+2022-11-15 00:07:33 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+2022-11-15 00:07:36 - [MESSAGE][INFO] - Appium server started on port 60,630
+
+2022-11-15 00:07:52 - [MESSAGE][PASSED] - Started app at: 'C:\Users\Pieter\Desktop\app-debug.apk'
+
+2022-11-15 00:07:52 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/android.widget.EditText - Email (1)"), "maria@mail.pt", 0): Text 'maria@mail.pt' has been set to element 'Object Repository/android.widget.EditText - Email (1)'
+
+2022-11-15 00:07:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-11-15 00:07:54 - [MESSAGE][PASSED] - Text 'maria@mail.pt' has been set to element 'Object Repository/android.widget.EditText - Email (1)'
+
+2022-11-15 00:07:54 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/android.widget.Button - LOGIN (2)"), 0): Tapped on element 'Object Repository/android.widget.Button - LOGIN (2)'
+
+2022-11-15 00:07:54 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-11-15 00:07:55 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/android.widget.Button - LOGIN (2)'
+
+2022-11-15 00:07:55 - [TEST_STEP][PASSED] - getText(findTestObject("Object Repository/android.widget.TextView - Password is required (1)"), 0): Text of element 'Object Repository/android.widget.TextView - Password is required (1)' is: 'Password is required'
+
+2022-11-15 00:07:55 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-11-15 00:07:56 - [MESSAGE][PASSED] - Text of element 'Object Repository/android.widget.TextView - Password is required (1)' is: 'Password is required'
+
+2022-11-15 00:07:56 - [TEST_STEP][PASSED] - closeApplication(): Close app successfully
+
+2022-11-15 00:07:59 - [MESSAGE][PASSED] - Close app successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/testLoginNoEmail" time="37.314" classname="Test Cases/testLoginNoEmail" status="PASSED">
+         <system-out><![CDATA[2022-11-15 00:07:59 - [TEST_CASE][PASSED] - Test Cases/testLoginNoEmail: Test Cases/testLoginNoEmail
+
+2022-11-15 00:08:00 - [TEST_STEP][PASSED] - startApplication("C:\Users\Pieter\Desktop\app-debug.apk", true): Started app at: 'C:\Users\Pieter\Desktop\app-debug.apk'
+
+2022-11-15 00:08:00 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+2022-11-15 00:08:05 - [MESSAGE][INFO] - Appium server started on port 61,874
+
+2022-11-15 00:08:27 - [MESSAGE][PASSED] - Started app at: 'C:\Users\Pieter\Desktop\app-debug.apk'
+
+2022-11-15 00:08:27 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/android.widget.EditText - Password (1)"), "123", 0): Text '123' has been set to element 'Object Repository/android.widget.EditText - Password (1)'
+
+2022-11-15 00:08:28 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-11-15 00:08:30 - [MESSAGE][PASSED] - Text '123' has been set to element 'Object Repository/android.widget.EditText - Password (1)'
+
+2022-11-15 00:08:30 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/android.widget.Button - LOGIN (3)"), 0): Tapped on element 'Object Repository/android.widget.Button - LOGIN (3)'
+
+2022-11-15 00:08:30 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-11-15 00:08:31 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/android.widget.Button - LOGIN (3)'
+
+2022-11-15 00:08:31 - [TEST_STEP][PASSED] - getText(findTestObject("Object Repository/android.widget.TextView - Email is required (1)"), 0): Text of element 'Object Repository/android.widget.TextView - Email is required (1)' is: 'Email is required'
+
+2022-11-15 00:08:31 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-11-15 00:08:32 - [MESSAGE][PASSED] - Text of element 'Object Repository/android.widget.TextView - Email is required (1)' is: 'Email is required'
+
+2022-11-15 00:08:32 - [TEST_STEP][PASSED] - closeApplication(): Close app successfully
+
+2022-11-15 00:08:36 - [MESSAGE][PASSED] - Close app successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-11-15 00:05:59 - [TEST_SUITE][PASSED] - TestLogin: Test Cases/testLoginNoEmail]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
