@@ -21,7 +21,7 @@ Mobile.startApplication('C:\\Users\\M0hamede\\Desktop\\app-debug.apk', true)
 
 Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Email (1)'), 'maria@mail.pt', 0)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - LOGIN (2)'), 0)
+Mobile.tap(findTestObject('null'), 0)
 
 Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Password is required (1)'), 0)
 

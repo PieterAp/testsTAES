@@ -25,7 +25,7 @@ Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Passw
 
 Mobile.tap(findTestObject('Object Repository/android.widget.CheckBox - Remember me (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - LOGIN (5)'), 0)
+Mobile.tap(findTestObject('null'), 0)
 
 Mobile.getText(findTestObject('Object Repository/android.widget.TextView - DashBoard (1)'), 0)
 

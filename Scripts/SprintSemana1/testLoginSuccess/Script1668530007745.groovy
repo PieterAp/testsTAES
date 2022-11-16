@@ -23,7 +23,7 @@ Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Email
 
 Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Password (2)'), '123', 0)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - LOGIN (4)'), 0)
+Mobile.tap(findTestObject('null'), 0)
 
 Mobile.getText(findTestObject('Object Repository/android.widget.TextView - DashBoard'), 0)
 

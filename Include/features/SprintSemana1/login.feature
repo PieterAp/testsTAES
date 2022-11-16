@@ -20,6 +20,7 @@ Scenario: Login with selected remember
 	And I insert "123" in the password field 
 	And I click on the "Remember me" checkbox
 	And I click on the Login button
+	Then I should see the dashboard interface
 	And I close the application
 	And I start the application login remember
 	Then I should see the dashboard interface

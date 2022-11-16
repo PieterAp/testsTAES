@@ -60,11 +60,12 @@ class NoEmail {
 
 	@When("I click on the Login button")
 	public void i_click_on_the_Login_button() {
-		Mobile.tap(findTestObject('Object Repository/android.widget.Button - LOGIN (2)'), 0)
+		Mobile.tap(findTestObject('Object Repository/android.widget.Button - LOGIN'), 0)
 	}
 
 	@Then("I should see an error message stating that the email is required")
 	public void i_should_see_an_error_message_stating_that_the_email_is_required() {
 		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Email is required'), 0)
+		Mobile.closeApplication()
 	}
 }

@@ -46,8 +46,9 @@ import cucumber.api.java.en.When
 
 class loginWrongEmail {
 	@Then("I should see an error message stating that the login has failed")
-public void i_should_see_an_error_message_stating_that_the_login_has_failed() {
-    // Write code here that turns the phrase above into concrete actions
-    Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Login failed. Wrong credentials'), 0)
-}
+	public void i_should_see_an_error_message_stating_that_the_login_has_failed() {
+		// Write code here that turns the phrase above into concrete actions
+		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Login failed. Wrong credentials (1)'), 0)
+		Mobile.closeApplication()
+	}
 }
