@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\M0hamede\\Desktop\\app-debug.apk', false)
+Mobile.startApplication(GlobalVariable.apkPath, false)
 
 Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Email (3)'), 'manager_1@mail.pt', 0)
 

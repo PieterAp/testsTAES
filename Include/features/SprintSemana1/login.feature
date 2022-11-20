@@ -5,6 +5,7 @@ Feature: Login
 
 
 #Scenarios where login succeeds
+#DONE
 Scenario: Login with correct email and password
 	Given I have the device ready
 	When I start the application	
@@ -12,7 +13,8 @@ Scenario: Login with correct email and password
 	And I insert "123" in the password field 
 	And I click on the Login button
 	Then I should see a confirmation message and be presented with the dashboard
-	
+
+#DONE
 Scenario: Login with selected remember 
 	Given I have the device ready
 	When I start the application for the first time	
@@ -43,7 +45,7 @@ Scenario: Login with no input filled
 	And I click on the Login button
 	Then I should see an error message stating that both email and password are required fields
 
-#DELETE?
+#DONE
 Scenario: Login with wrong email
 	Given I have the device ready
 	When I start the application	
@@ -60,7 +62,7 @@ Scenario: Insert no email
 	And I click on the Login button
 	Then I should see an error message stating that the email is required
 
-#DELETE?
+#DONE
 Scenario: Login with wrong password
 	Given I have the device ready
 	When I start the application	

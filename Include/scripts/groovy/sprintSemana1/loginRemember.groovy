@@ -48,18 +48,16 @@ class loginRemember {
 
 	@When("I start the application for the first time")
 	public void i_start_the_application_for_the_first_time() {
-		Mobile.startApplication('C:\\Users\\M0hamede\\Desktop\\app-debug.apk', false)
+		Mobile.startApplication(GlobalVariable.apkPath,false)
 	}
 
 	@When("I click on the {string} checkbox")
 	public void i_click_on_the_checkbox(String string) {
-		// Write code here that turns the phrase above into concrete actions
 		Mobile.tap(findTestObject('Object Repository/android.widget.CheckBox - Remember me (1)'), 0)
 	}
 
 	@When("I close the application")
 	public void i_close_the_application() {
-		// Write code here that turns the phrase above into concrete actions
 		Mobile.closeApplication()
 	}
 
@@ -70,7 +68,6 @@ class loginRemember {
 
 	@Then("I should see the dashboard interface")
 	public void i_should_see_the_dashboard_interface() {
-		// Write code here that turns the phrase above into concrete actions
 		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - DashBoard (1)'), 0)
 	}
 }

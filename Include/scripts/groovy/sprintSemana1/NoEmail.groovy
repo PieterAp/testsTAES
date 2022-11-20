@@ -50,7 +50,7 @@ class NoEmail {
 
 	@When("I start the application")
 	public void i_start_the_application() {
-		Mobile.startApplication('C:\\Users\\M0hamede\\Desktop\\app-debug.apk', true)
+		Mobile.startApplication(GlobalVariable.apkPath,true)
 	}
 
 	@When("I insert {string} in the password field")
