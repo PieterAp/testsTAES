@@ -1,4 +1,4 @@
-package sprintSemana1
+package sprintSemana1_2
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -44,10 +44,10 @@ import cucumber.api.java.en.When
 
 
 
-class loginSuccess {
-	@Then("I should see a confirmation message and be presented with the dashboard")
-	public void i_should_see_a_confirmation_message_and_be_presented_with_the_dashboard() {
-		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - DashBoard'), 0)
+class loginWrongEmail {
+	@Then("I should see an error message stating that the login has failed")
+	public void i_should_see_an_error_message_stating_that_the_login_has_failed() {
+		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Login failed. Wrong credentials (1)'), 0)
 		Mobile.closeApplication()
 	}
 }

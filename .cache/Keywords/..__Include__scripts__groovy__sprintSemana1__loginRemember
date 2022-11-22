@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "6F2CA5FB59BF1549C20CA61CBE641B19",
+  "keywordFileContentHash": "B808F08084893E9C8A10CC943A248D16",
   "keywordClasses": [
     {
       "name": "sprintSemana1.loginRemember",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

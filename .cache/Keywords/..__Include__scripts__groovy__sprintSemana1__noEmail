@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "A8668FAC089E9F2882F279AF08B3DCA5",
+  "keywordFileContentHash": "402B875C07BE93EF1E7BEEF9F4FDA478",
   "keywordClasses": [
     {
       "name": "sprintSemana1.NoEmail",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

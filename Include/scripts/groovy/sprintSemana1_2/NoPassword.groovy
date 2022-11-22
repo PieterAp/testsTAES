@@ -1,4 +1,4 @@
-package sprintSemana1
+package sprintSemana1_2
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -43,9 +43,14 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-class InvalidEmail {
-	@Then("I should see an error message stating that the email isn't valid")
-	public void i_should_see_an_error_message_stating_that_the_email_isn_t_valid() {
-		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Email is not valid'), 0)
+class NoPassword {
+	@When("I insert {string} in the email field")
+	public void i_insert_in_the_email_field(String string) {
+		Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Email (1)'), string, 0)
+	}
+
+	@Then("I should see an error message stating that the password is required")
+	public void i_should_see_an_error_message_stating_that_the_password_is_required() {
+		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Password is required (1)'), 0)
 	}
 }

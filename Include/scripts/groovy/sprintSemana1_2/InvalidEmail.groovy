@@ -1,4 +1,4 @@
-package sprintSemana1
+package sprintSemana1_2
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -42,10 +42,10 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
-class NoData {
-	@Then("I should see an error message stating that both email and password are required fields")
-	public void i_should_see_an_error_message_stating_that_both_email_and_password_are_required_fields() {
-		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Email is required'), 0)
-		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Password is required'), 0)
+
+class InvalidEmail {
+	@Then("I should see an error message stating that the email isn't valid")
+	public void i_should_see_an_error_message_stating_that_the_email_isn_t_valid() {
+		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Email is not valid'), 0)
 	}
 }
