@@ -4,7 +4,7 @@ Feature: Register
   So that I can access the login page
 
 #Scenarios where register succeeds
-Scenario: Register with valid email, password, name and licence plate
+Scenario: Register with valid email, password, name and licence plate and phone number
 	Given I have the device ready
 	When I start the application	
 	And I click on the register link
@@ -13,6 +13,7 @@ Scenario: Register with valid email, password, name and licence plate
 	And I insert "pedroxpto" in the password field
 	And I insert "pedroxpto" in the password confirmation field
 	And I insert "94-98-FL" in the  licence plate field
+	And I insert "91000000" in the  phone number field
 	And I click on the Register button
 	Then I should see a confirmation message and be presented with the login interface
 
@@ -23,7 +24,7 @@ Scenario: Register with no input filled
 	And I click on the register link	
 	And I click on the Register button
 	Then I should see an error message stating that the register has failed
-	
+
 Scenario: Register with invalid name
 	Given I have the device ready
 	When I start the application	
@@ -33,6 +34,20 @@ Scenario: Register with invalid name
 	And I insert "pedroxpto" in the password field
 	And I insert "pedroxpto" in the password confirmation field
 	And I insert "94-98-FL" in the  licence plate field
+	And I insert "91000000" in the  phone number field
+	And I click on the Register button
+	Then I should see an error message stating that the name is invalid	
+
+Scenario: Register with invalid phone number
+	Given I have the device ready
+	When I start the application	
+	And I click on the register link
+	And I insert "pedro.xpto4" in the name field
+	And I insert "brunogmail.com" in the email field
+	And I insert "pedroxpto" in the password field
+	And I insert "pedroxpto" in the password confirmation field
+	And I insert "94-98-FL" in the  licence plate field
+	And I insert "910000" in the  phone number field
 	And I click on the Register button
 	Then I should see an error message stating that the name is invalid	
 
@@ -45,9 +60,10 @@ Scenario: Register with invalid email
 	And I insert "pedroxpto" in the password field
 	And I insert "pedroxpto" in the password confirmation field
 	And I insert "94-98-FL" in the  licence plate field
+	And I insert "91000000" in the  phone number field
 	And I click on the Register button
 	Then I should see an error message stating that the email is invalid
-	
+
 Scenario: Register with invalid password
 	Given I have the device ready
 	When I start the application	
@@ -57,9 +73,10 @@ Scenario: Register with invalid password
 	And I insert "p" in the password field
 	And I insert "p" in the password confirmation field
 	And I insert "94-98-FL" in the  licence plate field
+	And I insert "91000000" in the  phone number field
 	And I click on the Register button
 	Then I should see an error message stating that the password is invalid
-	
+
 Scenario: Register with invalid password confirmation
 	Given I have the device ready
 	When I start the application	
@@ -69,9 +86,10 @@ Scenario: Register with invalid password confirmation
 	And I insert "pedroxpto" in the password field
 	And I insert "pedro" in the password confirmation field
 	And I insert "94-98-FL" in the  licence plate field
+	And I insert "91000000" in the  phone number field
 	And I click on the Register button
 	Then I should see an error message stating that the password confirmation is invalid	
-	
+
 Scenario: Register with invalid licence plate
 	Given I have the device ready
 	When I start the application	
@@ -81,6 +99,7 @@ Scenario: Register with invalid licence plate
 	And I insert "pedroxpto" in the password field
 	And I insert "pedroxpto" in the password confirmation field
 	And I insert "94-98-" in the  licence plate field
+	And I insert "91000000" in the  phone number field
 	And I click on the Register button
 	Then I should see an error message stating that the password confirmation is invalid	
 
@@ -99,7 +118,7 @@ Scenario: Insert only email
 	And I insert "pedro@gmail.com" in the email field
 	And I click on the Register button
 	Then I should see an error message stating that the register has failed
-	
+
 Scenario: Insert only name
 	Given I have the device ready
 	When I start the application	
@@ -107,7 +126,7 @@ Scenario: Insert only name
 	And I insert "pedro" in the name field
 	And I click on the "Register" button
 	Then I should see an error message stating that the register has failed
-	
+
 Scenario: Insert only password confirmation
 	Given I have the device ready
 	When I start the application	
@@ -115,7 +134,7 @@ Scenario: Insert only password confirmation
 	And I insert "pedroxpto" in the password confirmation field
 	And I click on the "Register" button
 	Then I should see an error message stating that the register has failed
-	
+
 Scenario: Insert only the licence plate
 	Given I have the device ready
 	When I start the application	
@@ -123,16 +142,11 @@ Scenario: Insert only the licence plate
 	And I insert "94-98-FL" in the  licence plate field
 	And I click on the Register button
 	Then I should see an error message stating that the register has failed
-	
-Scenario: Register with no internet connection
+
+Scenario: Insert only the phone number
 	Given I have the device ready
-	And I haven't got internet connection
 	When I start the application	
 	And I click on the register link
-	And I insert "pedro" in the name field
-	And I insert "pedro@gmail.com" in the email field
-	And I insert "pedroxpto" in the password field
-	And I insert "pedroxpto" in the password confirmation field
-	And I insert "94-98-FL" in the  licence plate field
+	And I insert "91000000" in the  phone number field
 	And I click on the Register button
 	Then I should see an error message stating that the register has failed
