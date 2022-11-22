@@ -18,5 +18,5 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'Sprint Semana 1'
-CucumberKW.runFeatureFile('Include/features/SprintSemana1/login.feature')
+CucumberKW.runFeatureFile('Include/features/SprintSemana1_2/login.feature')
 
