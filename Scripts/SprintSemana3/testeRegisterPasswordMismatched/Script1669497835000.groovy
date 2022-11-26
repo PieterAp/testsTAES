@@ -17,9 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Sprint Semana 1'
-CucumberKW.runFeatureFile('Include/features/SprintSemana3/register.feature')
+Mobile.startApplication('C:\\Users\\M0hamede\\Desktop\\app-debug.apk', true)
 
-'Sprint Semana 1'
-CucumberKW.runFeatureFile('Include/features/SprintSemana1_2/login.feature')
+Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Password (7)'), '1234', 0)
+
+Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Confirm Password (2)'), '123', 0)
+
+Mobile.tap(findTestObject('Object Repository/android.widget.Button - SAVE (8)'), 0)
+
+Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Passwords do not match'), 0)
+
+Mobile.closeApplication()
 
