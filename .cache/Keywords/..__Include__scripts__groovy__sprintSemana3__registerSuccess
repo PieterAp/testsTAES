@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "9D69B461D44DF5AF2DFE1BF629027BB8",
+  "keywordFileContentHash": "D714566CDABDEF20F32E31281874D66E",
   "keywordClasses": [
     {
       "name": "sprintSemana3.registerSuccess",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
