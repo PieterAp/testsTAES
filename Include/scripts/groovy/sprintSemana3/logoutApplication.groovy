@@ -1,4 +1,4 @@
-package sprintSemana1_2
+package sprintSemana3
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -42,10 +42,29 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
-class loginSuccess {
-	@Then("I should see a confirmation message and be presented with the dashboard")
-	public void i_should_see_a_confirmation_message_and_be_presented_with_the_dashboard() {
-		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - DashBoard (2)'), 0)
-		Mobile.closeApplication()
+
+
+import org.openqa.selenium.Keys as Keys
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+
+
+
+class logoutApplication {
+	@Then("I open the side menu")
+	public void i_open_the_side_menu() {
+		Mobile.tap(findTestObject('Object Repository/android.widget.ImageButton (1)'), 0)
+	}
+
+	@Then("I click on the logout button")
+	public void i_click_on_the_logout_button() {
+		Mobile.tap(findTestObject('Object Repository/android.widget.TextView - Logout'), 0)
+	}
+
+	@Then("I should see the login page")
+	public void i_should_see_the_login_page() {
+		Mobile.getText(findTestObject('Object Repository/android.widget.Button - LOGIN (3)'), 0)
 	}
 }
