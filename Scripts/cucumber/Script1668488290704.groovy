@@ -17,9 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Sprint Semana 1'
+'Sprint Semana 1_2'
+CucumberKW.runFeatureFile('Include/features/SprintSemana1_2/login.feature')
+
+'Sprint Semana 3'
 CucumberKW.runFeatureFile('Include/features/SprintSemana3/register.feature')
 
-'Sprint Semana 1'
-CucumberKW.runFeatureFile('Include/features/SprintSemana1_2/login.feature')
+'Sprint Semana 3'
+CucumberKW.runFeatureFile('Include/features/SprintSemana3/logout.feature')
 
