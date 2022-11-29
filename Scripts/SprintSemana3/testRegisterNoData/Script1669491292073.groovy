@@ -17,9 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Sprint Semana 1'
-CucumberKW.runFeatureFile('Include/features/SprintSemana3/register.feature')
+Mobile.startApplication('C:\\Users\\M0hamede\\Desktop\\app-debug.apk', true)
 
-'Sprint Semana 1'
-CucumberKW.runFeatureFile('Include/features/SprintSemana1_2/login.feature')
+Mobile.tap(findTestObject('Object Repository/android.widget.TextView - Got no account Click here to register (1)'), 0)
+
+Mobile.tap(findTestObject('Object Repository/android.widget.Button - SAVE (1)'), 0)
+
+Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Name is required'), 0)
+
+Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Phone Number is required'), 0)
+
+Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Email is required (2)'), 0)
+
+Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Password is required (2)'), 0)
+
+Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Confirm Password is required'), 0)
+
+Mobile.getText(findTestObject('Object Repository/android.widget.TextView - License Plate is required'), 0)
+
+Mobile.closeApplication()
 
