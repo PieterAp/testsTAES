@@ -9,7 +9,7 @@ Scenario: Register with valid email, password, name , licence plate and phone nu
 	When I start the application	
 	And I click on the register link
 	And I insert "pedro" in the name field
-	And I insert "pedroxp@gmail.com" in the email field on register page
+	And I insert "pedrox@gmail.com" in the email field on register page
 	And I insert "pedroxpto" in the password field on register page
 	And I insert "pedroxpto" in the password confirmation field
 	And I insert "94-98-FL" in the  licence plate field
