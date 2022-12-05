@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "C47C24105828FE0E7CF39D2027B251A1",
+  "keywordFileContentHash": "6FCCDCA8BE794921822592369EB1F61C",
   "keywordClasses": [
     {
       "name": "sprintSemana3.invalidEmail",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
