@@ -26,3 +26,9 @@ CucumberKW.runFeatureFile('Include/features/SprintSemana3/register.feature')
 'Sprint Semana 3'
 CucumberKW.runFeatureFile('Include/features/SprintSemana3/logout.feature')
 
+'Sprint Semana 4\r\n'
+CucumberKW.runFeatureFile('Include/features/SprintSemana4/showOrders.feature')
+
+'Sprint Semana 4\r\n'
+CucumberKW.runFeatureFile('Include/features/SprintSemana4/editProfile.feature')
+

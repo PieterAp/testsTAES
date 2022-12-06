@@ -68,7 +68,6 @@ class loginRemember {
 
 	@Then("I should see the dashboard interface")
 	public void i_should_see_the_dashboard_interface() {
-		//Mobile.getText(findTestObject('Object Repository/android.widget.TextView - DashBoard (1)'), 0)
-		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - DashBoard (2)'), 0)
+		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Orders'), 0)
 	}
 }
