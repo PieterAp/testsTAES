@@ -19,7 +19,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\M0hamede\\AppData\\Local\\Temp\\Katalon\\Include\\features\\SprintSemana4\\orderDetails.feature\\20221204_223434\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\M0hamede\\AppData\\Local\\Temp\\Katalon\\Include\\features\\SprintSemana5\\resumeActiveOrder.feature\\20221206_215905\\execution.properties')
 
 TestCaseMain.beforeStart()
-TestCaseMain.runFeatureFile('Include/features/SprintSemana4/orderDetails.feature')
+TestCaseMain.runFeatureFile('Include/features/SprintSemana5/resumeActiveOrder.feature')
