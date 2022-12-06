@@ -45,7 +45,7 @@ import cucumber.api.java.en.When
 class loginSuccess {
 	@Then("I should see a confirmation message and be presented with the dashboard")
 	public void i_should_see_a_confirmation_message_and_be_presented_with_the_dashboard() {
-		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - DashBoard (2)'), 0)
+		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Orders'), 0)
 		Mobile.closeApplication()
 	}
 }
