@@ -17,28 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Sprint Semana 1_2'
-CucumberKW.runFeatureFile('Include/features/SprintSemana1_2/login.feature')
+Mobile.startApplication('C:\\Users\\M0hamede\\Desktop\\app-debug.apk', true)
 
-'Sprint Semana 3'
-CucumberKW.runFeatureFile('Include/features/SprintSemana3/register.feature')
+Mobile.tap(findTestObject('Object Repository/android.widget.LinearLayout (6)'), 0)
 
-'Sprint Semana 3'
-CucumberKW.runFeatureFile('Include/features/SprintSemana3/logout.feature')
+Mobile.tap(findTestObject('Object Repository/android.widget.ImageButton (6)'), 0)
 
-'Sprint Semana 4\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/showOrders.feature')
+Mobile.tap(findTestObject('Object Repository/android.widget.Button - SKIP'), 0)
 
-'Sprint Semana 4\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/editProfile.feature')
+Mobile.tap(findTestObject('Object Repository/android.widget.Button - Got it'), 0)
 
-'Sprint Semana 5\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/resumeActiveOrder.feature')
+Mobile.tap(findTestObject('Object Repository/android.view.View - Dismiss'), 0)
 
-'Sprint Semana 5\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/organizeOrderList.feature')
+Mobile.tap(findTestObject('Object Repository/android.widget.Button - While using the app'), 0)
 
-'Sprint Semana 5\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/navigation.feature')
+Mobile.tap(findTestObject('Object Repository/android.view.View - Start'), 0)
 
+Mobile.verifyElementExist(findTestObject('Object Repository/android.widget.FrameLayout'), 0)
+
+Mobile.closeApplication()
 
