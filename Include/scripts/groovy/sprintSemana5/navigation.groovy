@@ -44,15 +44,21 @@ import cucumber.api.java.en.When
 
 
 
-class viewActiveOrders {
-
-	@Then("I click on the active orders button")
-	public void i_click_on_the_active_orders_button() {
-		Mobile.tap(findTestObject('Object Repository/android.widget.CheckedTextView - Active orders (1)'), 0)
+class navigation {
+	@Then("I click on the navigation button")
+	public void i_click_on_the_navigation_button() {
+		Mobile.tap(findTestObject('Object Repository/android.widget.ImageButton (6)'), 0)
 	}
 
-	@Then("I should see the active orders interface")
-	public void i_should_see_the_active_orders_interface() {
-		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Active Order'), 0)
+	@Then("i should see the active order navigation")
+	public void i_should_see_the_active_order_navigation() {
+		/*
+		Mobile.tap(findTestObject('Object Repository/android.widget.Button - SKIP'), 0)
+		Mobile.tap(findTestObject('Object Repository/android.widget.Button - Got it'), 0)
+		Mobile.tap(findTestObject('Object Repository/android.view.View - Dismiss'), 0)
+		Mobile.tap(findTestObject('Object Repository/android.widget.Button - While using the app'), 0)
+		Mobile.tap(findTestObject('Object Repository/android.view.View - Start'), 0)
+		*/
+		Mobile.verifyElementExist(findTestObject('Object Repository/android.widget.FrameLayout'), 0)
 	}
 }
