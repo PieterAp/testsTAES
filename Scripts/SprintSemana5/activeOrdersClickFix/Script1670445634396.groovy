@@ -17,28 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Sprint Semana 1_2'
-CucumberKW.runFeatureFile('Include/features/SprintSemana1_2/login.feature')
+Mobile.startApplication('C:\\Users\\M0hamede\\Desktop\\app-debug.apk', true)
 
-'Sprint Semana 3'
-CucumberKW.runFeatureFile('Include/features/SprintSemana3/register.feature')
+Mobile.tap(findTestObject('Object Repository/android.widget.CheckedTextView - Active orders (1)'), 0)
 
-'Sprint Semana 3'
-CucumberKW.runFeatureFile('Include/features/SprintSemana3/logout.feature')
-
-'Sprint Semana 4\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/showOrders.feature')
-
-'Sprint Semana 4\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/editProfile.feature')
-
-'Sprint Semana 5\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/resumeActiveOrder.feature')
-
-'Sprint Semana 5\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/organizeOrderList.feature')
-
-'Sprint Semana 5\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/navigation.feature')
-
+Mobile.closeApplication()
 
