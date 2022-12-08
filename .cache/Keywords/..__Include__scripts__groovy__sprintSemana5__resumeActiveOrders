@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "40E757160C01A836E78AA9BA67C6F0F8",
+  "keywordFileContentHash": "E47A8C1CACED60C6EDFD0C44B678AD26",
   "keywordClasses": [
     {
       "name": "sprintSemana5.resumeActiveOrders",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

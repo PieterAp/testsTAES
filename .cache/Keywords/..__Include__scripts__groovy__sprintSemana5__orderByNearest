@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "892BE93C1FDA9C13E00E398CE8563713",
+  "keywordFileContentHash": "F270BE8DF8E8D73E2F0F005B69EA4ABC",
   "keywordClasses": [
     {
       "name": "sprintSemana5.orderByNearest",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
