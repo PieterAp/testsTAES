@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "keywordFileContentHash": "F95C70E7B7026081DE429990CE72B9A1",
-=======
   "keywordFileContentHash": "F4D917A5EFC53CAC039ECBE63A8FFD01",
->>>>>>> branch 'feature/PRJ-48-us12---accept-order' of https://bitbucket.org/2191820/teststaes.git
   "keywordClasses": [
     {
       "name": "sprintSemana5.viewActiveOrders",

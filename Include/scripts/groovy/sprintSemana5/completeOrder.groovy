@@ -44,21 +44,15 @@ import cucumber.api.java.en.When
 
 
 
-class navigation {
-	@Then("I click on the navigation button")
-	public void i_click_on_the_navigation_button() {
-		Mobile.tap(findTestObject('Object Repository/android.widget.ImageButton (6)'), 0)
+class completeOrder {
+	@Then("I click on the confirm order delivered button")
+	public void i_click_on_the_confirm_order_delivered_button() {
+	   Mobile.tap(findTestObject('Object Repository/android.widget.Button - CONFIRM ORDER DELIVERED'), 0)
 	}
-
-	@Then("i should see the active order navigation")
-	public void i_should_see_the_active_order_navigation() {
-		/*
-		 Mobile.tap(findTestObject('Object Repository/android.widget.Button - SKIP'), 0)
-		 Mobile.tap(findTestObject('Object Repository/android.widget.Button - Got it'), 0)
-		 Mobile.tap(findTestObject('Object Repository/android.view.View - Dismiss'), 0)
-		 Mobile.tap(findTestObject('Object Repository/android.widget.Button - While using the app'), 0)
-		 Mobile.tap(findTestObject('Object Repository/android.view.View - Start'), 0)
-		 */
-		Mobile.verifyElementExist(findTestObject('Object Repository/android.widget.FrameLayout'), 0)
+	
+	@Then("I should see a message stating that the order has been delivered")
+	public void i_should_see_a_message_stating_that_the_order_has_been_delivered() {
+	    Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Order has been delivered'), 0)
+		Mobile.closeApplication()
 	}
 }

@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "3261ED33A9AD79DD5364BC5879C34ED3",
+  "keywordFileContentHash": "00F574D3BAFF4467239DA4B376524E4A",
   "keywordClasses": [
     {
       "name": "sprintSemana4.licensePlateEditSuccess",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "77E31373CD556B52572DD008BF225B6F",
+  "keywordFileContentHash": "4A5CBC81616CBF9BA3CD092F8D65B161",
   "keywordClasses": [
     {
       "name": "sprintSemana4.nameEditSuccess",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
