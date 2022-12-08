@@ -51,6 +51,6 @@ class showOrdersSuccess {
 	}
 	@Then("I should see the order list page ")
 	public void i_should_see_the_order_list_page() {
-		Mobile.verifyElementExist(findTestObject('Object Repository/android.widget.LinearLayout'), 0)
+		Mobile.verifyElementExist(findTestObject('Object Repository/androidx.recyclerview.widget.RecyclerView'), 0)
 	}
 }

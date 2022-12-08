@@ -44,15 +44,11 @@ import cucumber.api.java.en.When
 
 
 
-class viewActiveOrders {
-
-	@Then("I click on the active orders button")
-	public void i_click_on_the_active_orders_button() {
-		Mobile.tap(findTestObject('Object Repository/android.widget.CheckedTextView - Active orders (1)'), 0)
+class acceptOrderSuccess {
+	@Then("I click on the accept order button")
+	public void i_click_on_the_accept_order_button() {
+		Mobile.delay(5)
+		Mobile.tap(findTestObject('Object Repository/android.widget.Button - ACCEPT ORDER (2)'), 0)
 	}
-
-	@Then("I should see the active orders interface")
-	public void i_should_see_the_active_orders_interface() {
-		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Active Order'), 0)
-	}
+		
 }
