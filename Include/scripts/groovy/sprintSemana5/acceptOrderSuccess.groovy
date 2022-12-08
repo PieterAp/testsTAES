@@ -1,4 +1,4 @@
-package sprintSemana4
+package sprintSemana5
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -44,13 +44,11 @@ import cucumber.api.java.en.When
 
 
 
-class showOrdersSuccess {
-	@Then("I should see the orders interface")
-	public void i_should_see_the_orders_interface() {
-		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Orders'), 0)
+class acceptOrderSuccess {
+	@Then("I click on the accept order button")
+	public void i_click_on_the_accept_order_button() {
+		Mobile.delay(5)
+		Mobile.tap(findTestObject('Object Repository/android.widget.Button - ACCEPT ORDER (2)'), 0)
 	}
-	@Then("I should see the order list page ")
-	public void i_should_see_the_order_list_page() {
-		Mobile.verifyElementExist(findTestObject('Object Repository/androidx.recyclerview.widget.RecyclerView'), 0)
-	}
+		
 }

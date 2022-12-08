@@ -48,7 +48,7 @@ class showOrderDetails {
 	@Then("I click on the first order")
 	public void i_click_on_the_first_order() {
 		// Write code here that turns the phrase above into concrete actions
-		Mobile.tap(findTestObject('Object Repository/android.widget.LinearLayout (1)'), 0)
+		Mobile.tap(findTestObject('Object Repository/androidx.recyclerview.widget.RecyclerView'), 0)
 	}
 
 	@And("I should see the order customer name")
