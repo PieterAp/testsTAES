@@ -49,7 +49,7 @@ class licensePlateEditSuccess {
 	public void i_change_my_license_plate_to(String string) {
 		Mobile.setText(findTestObject('Object Repository/android.widget.EditText - 11-BB-11'), string, 0)
 	}
-	
+
 	@Then("I should see the license plate {string}")
 	public void i_should_see_the_license_plate(String string) {
 		Mobile.getText(findTestObject('Object Repository/android.widget.EditText - 99-BB-88'), 0)

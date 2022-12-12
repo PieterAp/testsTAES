@@ -45,12 +45,10 @@ import io.appium.java_client.InteractsWithApps
 
 
 class emailEditSuccess {
-	
+
 
 	@When("I change my email to {string}")
 	public void i_change_my_email_to(String string) {
 		Mobile.setText(findTestObject('Object Repository/android.widget.EditText - nuno.motamail.pt'), string, 0)
 	}
-	
-	
 }
