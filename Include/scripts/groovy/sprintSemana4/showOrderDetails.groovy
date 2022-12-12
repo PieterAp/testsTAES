@@ -109,6 +109,6 @@ class showOrderDetails {
 	@And("I should see a button to accept the order")
 	public void i_should_see_a_button_to_accept_the_order() {
 		// Write code here that turns the phrase above into concrete actions
-		Mobile.verifyElementExist(findTestObject('Object Repository/android.widget.Button - ACCEPT ORDER'), 0)
+		Mobile.verifyElementExist(findTestObject('Object Repository/pickup/android.widget.Button - CLAIM ORDER'), 0)
 	}
 }

@@ -44,15 +44,9 @@ import cucumber.api.java.en.When
 
 
 
-class viewActiveOrders {
-
-	@Then("I click on the active orders button")
-	public void i_click_on_the_active_orders_button() {
-		Mobile.tap(findTestObject('Object Repository/android.widget.CheckedTextView - Active orders'), 0)
-	}
-
-	@Then("I should see the active orders interface")
-	public void i_should_see_the_active_orders_interface() {
-		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - Active Order'), 0)
+class pickupOrderNotReady {	
+	@Then("I should see a text stating the order is being prepared")
+	public void i_should_see_a_text_stating_the_order_is_being_prepared() {
+		Mobile.getText(findTestObject('Object Repository/pickup/android.widget.TextView - The order is being prepared (1)'), 0)
 	}
 }
