@@ -41,4 +41,5 @@ CucumberKW.runFeatureFile('Include/features/SprintSemana4/organizeOrderList.feat
 'Sprint Semana 5\r\n'
 CucumberKW.runFeatureFile('Include/features/SprintSemana4/navigation.feature')
 
+CucumberKW.runFeatureFile('Include/features/SprintSemana4/intermediateStepPickup.feature')
 
