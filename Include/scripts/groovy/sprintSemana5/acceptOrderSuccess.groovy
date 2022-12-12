@@ -48,7 +48,7 @@ class acceptOrderSuccess {
 	@Then("I click on the accept order button")
 	public void i_click_on_the_accept_order_button() {
 		Mobile.delay(5)
-		Mobile.tap(findTestObject('Object Repository/android.widget.Button - ACCEPT ORDER (2)'), 0)
+		Mobile.tap(findTestObject('Object Repository/pickup/android.widget.Button - CLAIM ORDER'), 0)
 	}
 		
 }

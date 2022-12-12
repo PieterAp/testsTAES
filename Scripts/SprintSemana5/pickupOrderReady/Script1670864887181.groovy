@@ -17,29 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Sprint Semana 1_2'
-CucumberKW.runFeatureFile('Include/features/SprintSemana1_2/login.feature')
+Mobile.startApplication('C:\\Users\\Pieter\\Desktop\\app-debug.apk', true)
 
-'Sprint Semana 3'
-CucumberKW.runFeatureFile('Include/features/SprintSemana3/register.feature')
+Mobile.tap(findTestObject('Object Repository/pickup/android.widget.LinearLayout'), 0)
 
-'Sprint Semana 3'
-CucumberKW.runFeatureFile('Include/features/SprintSemana3/logout.feature')
+Mobile.tap(findTestObject('Object Repository/pickup/android.widget.Button - CLAIM ORDER'), 0)
 
-'Sprint Semana 4\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/showOrders.feature')
+Mobile.tap(findTestObject('Object Repository/pickup/android.widget.Button - PICKUP ORDER'), 0)
 
-'Sprint Semana 4\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/editProfile.feature')
-
-'Sprint Semana 5\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/resumeActiveOrder.feature')
-
-'Sprint Semana 5\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/organizeOrderList.feature')
-
-'Sprint Semana 5\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/navigation.feature')
-
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/intermediateStepPickup.feature')
+Mobile.closeApplication()
 

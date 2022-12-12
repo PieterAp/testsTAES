@@ -17,29 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Sprint Semana 1_2'
-CucumberKW.runFeatureFile('Include/features/SprintSemana1_2/login.feature')
+Mobile.startApplication('C:\\Users\\Pieter\\Desktop\\app-debug.apk', true)
 
-'Sprint Semana 3'
-CucumberKW.runFeatureFile('Include/features/SprintSemana3/register.feature')
+Mobile.setText(findTestObject('Object Repository/pickup/android.widget.EditText - Email'), 'piet@mail.pt', 0)
 
-'Sprint Semana 3'
-CucumberKW.runFeatureFile('Include/features/SprintSemana3/logout.feature')
+Mobile.setText(findTestObject('Object Repository/pickup/android.widget.EditText - Password'), '123', 0)
 
-'Sprint Semana 4\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/showOrders.feature')
+Mobile.tap(findTestObject('Object Repository/pickup/android.widget.CheckBox - Remember me'), 0)
 
-'Sprint Semana 4\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/editProfile.feature')
+Mobile.tap(findTestObject('Object Repository/pickup/android.widget.Button - LOGIN'), 0)
 
-'Sprint Semana 5\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/resumeActiveOrder.feature')
+Mobile.tap(findTestObject('Object Repository/pickup/android.widget.LinearLayout (1)'), 0)
 
-'Sprint Semana 5\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/organizeOrderList.feature')
+Mobile.tap(findTestObject('Object Repository/pickup/android.widget.Button - CLAIM ORDER (1)'), 0)
 
-'Sprint Semana 5\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/navigation.feature')
+Mobile.getText(findTestObject('Object Repository/pickup/android.widget.TextView - The order is being prepared'), 0)
 
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/intermediateStepPickup.feature')
+Mobile.closeApplication()
 
