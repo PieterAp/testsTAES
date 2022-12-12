@@ -1,4 +1,4 @@
-package sprintSemana4
+package sprintSemana5
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -42,49 +42,17 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
-import io.appium.java_client.AppiumDriver
-import io.appium.java_client.InteractsWithApps
 
-class nameEditSuccess {
-	@When("I click on the profile picture")
-	public void i_click_on_the_profile_picture() {
-		Mobile.tap(findTestObject('Object Repository/android.widget.ImageView'), 0)
+
+class statistics {
+	
+	@Then("I should click on the statistics tab")
+	public void i_should_click_on_the_statistics_tab() {
+	   Mobile.tap(findTestObject('Object Repository/statistics/android.widget.TextView - STATISTICS'), 0)
 	}
-
-	@When("I should see the profile tab")
-	public void i_should_see_the_profile_tab() {
-		Mobile.getText(findTestObject('Object Repository/android.widget.TextView - PROFILE'), 0)
-	}
-
-	@When("I change my name to {string}")
-	public void i_change_my_name_to(String string) {
-		Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Nuno Mota'), string, 0)
-	}
-
-	@When("I click on the save button")
-	public void i_click_on_the_save_button() {
-		Mobile.tap(findTestObject('Object Repository/android.widget.Button - SAVE (10)'), 0)
-	}
-
-	@Then("I should see a message stating that was edited with success")
-	public void i_should_see_a_message_stating_that_was_edited_with_success() {
-		/*
-		 AppiumDriver<?> driver = MobileDriverFactory.getDriver()
-		 def toast = driver.findElementByXPath('//android.widget.Toast[@text="Edit with success"]')
-		 println("Toast element: " + toast)
-		 if (toast == null) {
-		 KeywordUtil.markFailed('ERROR: Toast object not found!')
-		 }
-		 Mobile.verifyEqual(toast, 'Edit with success')
-		 */
-	}
-
-	@Then("I should see the name {string}")
-	public void i_should_see_the_name(String string) {
-		Mobile.getText(findTestObject('Object Repository/android.widget.EditText - Nuno Carro'), 0)
-		//remove de app because uninstall was necessary
-		InteractsWithApps driver = MobileDriverFactory.getDriver()
-		driver.removeApp('com.example.fastuga')
-		Mobile.closeApplication()
+	
+	@Then("I should see the statistics page")
+	public void i_should_see_the_statistics_page() {
+	   Mobile.getText(findTestObject('Object Repository/statistics/android.widget.TextView - Statistics (1)'), 0)
 	}
 }

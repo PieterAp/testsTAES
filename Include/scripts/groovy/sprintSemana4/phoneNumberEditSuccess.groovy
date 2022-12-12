@@ -49,7 +49,7 @@ class phoneNumberEditSuccess {
 	public void i_change_my_phone_number_to(String string) {
 		Mobile.setText(findTestObject('Object Repository/android.widget.EditText - 910000000'), string, 0)
 	}
-	
+
 	@Then("I should see the phone number {string}")
 	public void i_should_see_the_phone_number(String string) {
 		Mobile.getText(findTestObject('Object Repository/android.widget.EditText - 912345678'), 0)
