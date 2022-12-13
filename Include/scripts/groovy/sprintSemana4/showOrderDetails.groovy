@@ -54,14 +54,15 @@ class showOrderDetails {
 	@And("I should see the order customer name")
 	public void i_should_see_the_order_customer_name() {
 		// Write code here that turns the phrase above into concrete actions
-		String value = Mobile.getAttribute(findTestObject('Object Repository/android.widget.TextView -orderName'), 'text',10)
+		Mobile.delay(5)
+		String value = Mobile.getAttribute(findTestObject('Object Repository/statistics/android.widget.TextView - orderName'), 'text',10)
 		Mobile.verifyNotMatch(value, 'loading ...', false)
 	}
 
 	@And("I should see the amount off time passed since the order was created")
 	public void i_should_see_the_amount_off_time_passed_since_the_order_was_created() {
 		// Write code here that turns the phrase above into concrete actions
-		String value = Mobile.getAttribute(findTestObject('Object Repository/android.widget.TextView - orderTime'), 'text',5)
+		String value = Mobile.getAttribute(findTestObject('Object Repository/android.widget.TextView - orderTime'), 'text',10)
 		Mobile.verifyNotMatch(value, 'loading ...', false)
 	}
 
@@ -89,15 +90,13 @@ class showOrderDetails {
 	@And("I should see order delivery distance")
 	public void i_should_see_order_delivery_distance() {
 		// Write code here that turns the phrase above into concrete actions
-		String value = Mobile.getAttribute(findTestObject('Object Repository/android.widget.TextView - distance'), 'text',5)
-		Mobile.verifyNotMatch(value, 'loading ...', false)
+		Mobile.verifyElementExist(findTestObject('Object Repository/android.widget.TextView - distance'), 0)
 	}
 
 	@And("I should see order delivery estimated time")
 	public void i_should_see_order_delivery_estimated_time() {
 		// Write code here that turns the phrase above into concrete actions
-		String value = Mobile.getAttribute(findTestObject('Object Repository/android.widget.TextView - time'), 'text',5)
-		Mobile.verifyNotMatch(value, 'loading ...', false)
+		Mobile.verifyElementExist(findTestObject('Object Repository/android.widget.TextView - time'), 0)
 	}
 
 	@And("I should see the map route")
