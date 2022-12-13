@@ -8,11 +8,11 @@ Scenario: Register with valid email, password, name , licence plate and phone nu
 	Given I have the device ready
 	When I start the application	
 	And I click on the register link
-	And I insert "pedro" in the name field
-	And I insert "pedrox@gmail.com" in the email field on register page
-	And I insert "pedroxpto" in the password field on register page
-	And I insert "pedroxpto" in the password confirmation field
-	And I insert "94-98-FL" in the  licence plate field
+	And I insert "Nuno Mota" in the name field
+	And I insert "nuno.mota@mail.pt" in the email field on register page
+	And I insert "123" in the password field on register page
+	And I insert "123" in the password confirmation field
+	And I insert "11-BB-11" in the  licence plate field
 	And I insert "910000000" in the  phone number field
 	And I click on the Register button
 	Then I should see a confirmation message and be presented with the login interface
@@ -22,11 +22,11 @@ Scenario: Register with taken email, valid password, name , licence plate and ph
 	Given I have the device ready
 	When I start the application	
 	And I click on the register link
-	And I insert "pedro" in the name field
-	And I insert "pedroxp@gmail.com" in the email field on register page
-	And I insert "pedroxpto" in the password field on register page
-	And I insert "pedroxpto" in the password confirmation field
-	And I insert "94-98-FL" in the  licence plate field
+	And I insert "Nuno Mota" in the name field
+	And I insert "nuno.mota@mail.pt" in the email field on register page
+	And I insert "123" in the password field on register page
+	And I insert "123" in the password confirmation field
+	And I insert "11-BB-11" in the  licence plate field
 	And I insert "910000000" in the  phone number field
 	And I click on the Register button
 	Then I should see an error message stating that the register has failed

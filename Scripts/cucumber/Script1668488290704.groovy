@@ -21,10 +21,10 @@ import org.openqa.selenium.Keys as Keys
 CucumberKW.runFeatureFile('Include/features/SprintSemana1_2/login.feature')
 
 'Sprint Semana 3'
-CucumberKW.runFeatureFile('Include/features/SprintSemana3/register.feature')
+CucumberKW.runFeatureFile('Include/features/SprintSemana3/logout.feature')
 
 'Sprint Semana 3'
-CucumberKW.runFeatureFile('Include/features/SprintSemana3/logout.feature')
+CucumberKW.runFeatureFile('Include/features/SprintSemana3/register.feature')
 
 'Sprint Semana 4\r\n'
 CucumberKW.runFeatureFile('Include/features/SprintSemana4/showOrders.feature')
@@ -32,14 +32,30 @@ CucumberKW.runFeatureFile('Include/features/SprintSemana4/showOrders.feature')
 'Sprint Semana 4\r\n'
 CucumberKW.runFeatureFile('Include/features/SprintSemana4/editProfile.feature')
 
+'Sprint Semana 4\r\n'
+CucumberKW.runFeatureFile('Include/features/SprintSemana4/orderDetails.feature')
+
 'Sprint Semana 5\r\n'
 CucumberKW.runFeatureFile('Include/features/SprintSemana4/resumeActiveOrder.feature')
+
+'Sprint Semana 5\r\n'
+CucumberKW.runFeatureFile('Include/features/SprintSemana4/acceptOrder.feature')
+
+'Sprint Semana 5\r\n'
+CucumberKW.runFeatureFile('Include/features/SprintSemana4/cancelOrder.feature')
+
+'Sprint Semana 5\r\n'
+CucumberKW.runFeatureFile('Include/features/SprintSemana4/completeOrder.feature')
+
+'Sprint Semana 5\r\n'
+CucumberKW.runFeatureFile('Include/features/SprintSemana4/intermediateStepPickup.feature')
+
+'Sprint Semana 5\r\n'
+CucumberKW.runFeatureFile('Include/features/SprintSemana4/navigation.feature')
 
 'Sprint Semana 5\r\n'
 CucumberKW.runFeatureFile('Include/features/SprintSemana4/organizeOrderList.feature')
 
 'Sprint Semana 5\r\n'
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/navigation.feature')
-
-CucumberKW.runFeatureFile('Include/features/SprintSemana4/intermediateStepPickup.feature')
+CucumberKW.runFeatureFile('Include/features/SprintSemana4/statistics.feature')
 

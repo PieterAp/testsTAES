@@ -82,9 +82,6 @@ class nameEditSuccess {
 	@Then("I should see the name {string}")
 	public void i_should_see_the_name(String string) {
 		Mobile.getText(findTestObject('Object Repository/android.widget.EditText - Nuno Carro'), 0)
-		//remove de app because uninstall was necessary
-		InteractsWithApps driver = MobileDriverFactory.getDriver()
-		driver.removeApp('com.example.fastuga')
 		Mobile.closeApplication()
 	}
 }
