@@ -44,19 +44,19 @@ import cucumber.api.java.en.When
 
 
 
-class pickupOrderReady {
-	@Then("I should see the initiate delivery interface")
-	public void i_should_see_the_initiate_delivery_interface() {
-		Mobile.verifyElementExist(findTestObject('Object Repository/pickup/android.widget.Button - PICKUP ORDER'), 0)
+class cancelOrderB4Pickup {
+	@Then("I should see the oder {string}")
+	public void i_should_see_the_oder(String string) {
+		Mobile.verifyElementText(findTestObject('Object Repository/cancelOrder/android.widget.TextView - Order 22'), 'Order #22')
+	}
+	
+	@Then("I should see a button to cancel the order")
+	public void i_should_see_a_button_to_cancel_the_order() {
+		Mobile.verifyElementExist(findTestObject('Object Repository/cancelOrder/android.widget.Button - CANCEL'), 0)
 	}
 
-	@Then("I should see a button to confirm order pickup")
-	public void i_should_see_a_button_to_confirm_order_pickup() {
-		Mobile.verifyElementExist(findTestObject('Object Repository/pickup/android.widget.Button - PICKUP ORDER'), 0)
-	}
-
-	@And("I click on the pickup button")
-	public void i_click_on_the_pickup_button() {
-		Mobile.tap(findTestObject('Object Repository/pickup/android.widget.Button - PICKUP ORDER'), 0)
+	@And("I click on the cancel button")
+	public void i_click_on_the_cancel_button() {
+		Mobile.tap(findTestObject('Object Repository/cancelOrder/android.widget.Button - CANCEL'), 0)
 	}
 }

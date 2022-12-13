@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'C:\\Users\\igors\\Desktop\\app-debug.apk'</initValue>
+      <initValue>'C:\\Users\\Pieter\\Desktop\\app-debug.apk'</initValue>
       <name>apkPath</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
