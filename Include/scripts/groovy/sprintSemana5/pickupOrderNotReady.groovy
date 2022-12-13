@@ -44,7 +44,7 @@ import cucumber.api.java.en.When
 
 
 
-class pickupOrderNotReady {	
+class pickupOrderNotReady {
 	@Then("I should see a text stating the order is being prepared")
 	public void i_should_see_a_text_stating_the_order_is_being_prepared() {
 		Mobile.getText(findTestObject('Object Repository/pickup/android.widget.TextView - The order is being prepared (1)'), 0)

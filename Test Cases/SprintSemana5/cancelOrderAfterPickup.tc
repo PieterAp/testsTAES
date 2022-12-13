@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>cancelOrderAfterPickup</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e97ef2f9-db70-45dc-9639-916c579cb9ad</testCaseGuid>
+</TestCaseEntity>
